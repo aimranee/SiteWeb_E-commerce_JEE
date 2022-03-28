@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_4_*.xsd" id="WebApp_ID" version="4.0">
+  <display-name>App_JSP_JavaBean</display-name>
+	
+	<servlet>
+       <servlet-name>addLignesCommandes</servlet-name>
+       <servlet-class>Controller.AddLignesCommandes</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>addLignesCommandes</servlet-name>
+        <url-pattern>/views/addLignesCommandes</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+       <servlet-name>ArticleServlet</servlet-name>
+       <servlet-class>Controller.ArticleServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ArticleServlet</servlet-name>
+        <url-pattern>/views/Articles</url-pattern>
+    </servlet-mapping>
+    
+	<servlet>
+       <servlet-name>HomeServlet</servlet-name>
+       <servlet-class>Controller.HomeServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/views/Home</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>LoginServlet</servlet-name>
+       <servlet-class>Controller.LoginServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/views/login</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+       <servlet-name>InscriptionServlet</servlet-name>
+       <servlet-class>Controller.InscriptionServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>InscriptionServlet</servlet-name>
+        <url-pattern>/views/Inscription</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>CommandeServlet</servlet-name>
+       <servlet-class>Controller.CommandeServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CommandeServlet</servlet-name>
+        <url-pattern>/views/Commande</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>ValidationServlet</servlet-name>
+       <servlet-class>Controller.ValidationServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ValidationServlet</servlet-name>
+        <url-pattern>/views/Validation</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>UtilisateurServlet</servlet-name>
+       <servlet-class>Controller.UtilisateurServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UtilisateurServlet</servlet-name>
+        <url-pattern>/views/Utilisateur</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+       <servlet-name>ConfirmEditUserServlet</servlet-name>
+       <servlet-class>Controller.ConfirmEditUserServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConfirmEditUserServlet</servlet-name>
+        <url-pattern>/views/ConfirmEdit</url-pattern>
+    </servlet-mapping>  
+    
+    <servlet>
+       <servlet-name>LignesCommandesServlet</servlet-name>
+       <servlet-class>Controller.LignesCommandesServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LignesCommandesServlet</servlet-name>
+        <url-pattern>/views/LignesCommandes</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>
+	    <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+	    <param-value>www</param-value>
+	</context-param>
+
+</web-app>
